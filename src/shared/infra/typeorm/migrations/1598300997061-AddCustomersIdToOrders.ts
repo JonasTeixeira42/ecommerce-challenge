@@ -23,7 +23,7 @@ export default class AddCustomersIdToOrders1598300997061
         name: 'OrdersCustomers',
         columnNames: ['customer_id'],
         referencedColumnNames: ['id'],
-        referencedTableName: 'users',
+        referencedTableName: 'customers',
         onDelete: 'SET NULL',
       }),
     );
