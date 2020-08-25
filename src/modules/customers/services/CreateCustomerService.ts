@@ -25,7 +25,7 @@ class CreateCustomerService {
       throw new AppError('Email already registered');
     }
 
-    const customer = this.customersRepository.create({ email, name });
+    const customer = await this.customersRepository.create({ email, name });
 
     return customer;
   }
